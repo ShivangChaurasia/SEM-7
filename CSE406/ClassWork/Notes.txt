@@ -1,0 +1,8 @@
+Why do swing component starts with J?
+Ans: Here, the J component is used to indicate that the component is part of the Java Swing library.
+    The "J" prefix helps distinguish Swing components from their AWT (Abstract Window Toolkit) counterparts, which do not have the "J" prefix.
+    For example, JButton is a Swing component, while Button is an AWT component. This naming convention helps developers easily identify and differentiate between the two sets of components in Java GUI development.
+    Many swing components of improved versions of AWT components, providing more features and better performance.
+    The "J" prefix serves as a clear indicator that these components belong to the Swing framework, which is built on top of AWT but offers a richer set of GUI elements and capabilities.
+    Sun Microsystems, the original developers of Java, introduced this naming convention to maintain clarity and consistency in the Java programming language. By using the "J" prefix, developers
+    can quickly recognize that they are working with Swing components, which are designed to provide a more modern and flexible user interface experience compared to the older AWT components.
