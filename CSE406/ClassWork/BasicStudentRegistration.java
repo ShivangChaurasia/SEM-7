@@ -20,5 +20,7 @@ public class BasicStudentRegistration {
 
         frame.add(new JLabel(""));
         frame.add(new JButton("Register"));
+        
+        frame.setVisible(true);
     }
 }

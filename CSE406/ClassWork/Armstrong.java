@@ -14,7 +14,7 @@ public class Armstrong {
 
     }
 
-    public static boolean isArmstrong(int num) {
+    public static boolean isArmstrong(int  num) {
         int result = 0;
         int originalNum = num;
         int remainder;

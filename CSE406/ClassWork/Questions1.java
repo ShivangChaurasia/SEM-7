@@ -22,10 +22,31 @@
     // 3. Print Employees with salary more than 50000 and less than 100000
     // 4. Print Employees with salary more than 50000 and less than 100000 and working in department 'IT'
     // 5. Print Employees with salary more than 50000 and less than 100000 and working in department 'IT' and sort them by name
-    // 6. Find the highest paud employee in the list
+    // 6. Find the highest paid employee in the list
     // 7. Find the average
     // 8.Count Employees in each department
     // 9. Print the names of employees in each department
+
+
+//practice 1
+//create button that display "hello java" when clicked
+//Create two test field and a button that calculates and display the sum
+//create a counter with increment and decrement button using anonymous classes
+//create a window that display X AND Y cordinates when the mouse is clicked
+//create a login form using textfield ,password,Jbutton and anonymous action listener
+
+//Practice:
+	//	Create JFrame with a light green background using the Color Class.
+	//	Create JLabel with blue text and a bold 24- point font.
+	//	Create a window containing two buttons with different background colors.
+	//	Draw a rectangle, a circle, and a horizontal
+	//  
+	//
+	//
+
+
+
+
 
 
 
