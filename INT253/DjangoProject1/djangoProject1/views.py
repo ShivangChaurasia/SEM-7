@@ -90,3 +90,14 @@ def items(request):
         content+= f'<li><h3>{item}: {desc}</h3></li>'
     content += "</ul>"
     return HttpResponse(content)
+
+
+def Dgreetings(request,name,time):
+    if(time>=24 or time<0):
+        return HttpResponse(f"<h1>Invalid time value: {time}. Please provide a valid time between 0 and 23.</h1>")
+    if time < 12:
+        return HttpResponse(f"<h1>Good morning, {name}!</h1>")
+    elif time < 17:
+        return HttpResponse(f"<h1>Good afternoon, {name}!</h1>")
+    else:
+        return HttpResponse(f"<h1>Good evening, {name}!</h1>")

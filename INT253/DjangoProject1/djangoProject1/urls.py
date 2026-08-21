@@ -12,11 +12,8 @@ urlpatterns = [
     path('weather/', views.weather),
     path('greetings/', views.greetings),
     path('items/', views.items),
+    path('Dgreetings/<str:name>/<int:time>/', views.Dgreetings),
+
 
 ]
 
-#     *
-#    ***
-#   *****
-#  *******
-# *********
