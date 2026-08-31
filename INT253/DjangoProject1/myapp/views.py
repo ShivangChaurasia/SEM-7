@@ -103,3 +103,22 @@
 #         return HttpResponse(f"<h1>Good evening, {name}!</h1>")
 
 
+
+from email.policy import default
+
+from django.shortcuts import render
+
+# Create your views here.
+
+context = {
+    "name" : "Shivang",
+    "city" : "Bihar",
+    "Age" : 21
+}
+
+
+def home(request, name,city):
+    return render(request, 'home.html', {'name': name, 'city': city or "Bihar"})
+
+
+

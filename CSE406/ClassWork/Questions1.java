@@ -47,6 +47,20 @@
 
 
 
+//CA Practice: 
+//	1. Display "Mouse Entered" when the mouse enters a component and "Mouse Exited" when it leaves.
+//	1. Create a JPanel. Display the mouse coordinates whenever the user clicks inside the panel.
+//	2. Change a button's text when the mouse enters it and restore the original text when the mouse exits.
+//	3. Create a text field and detect every key press using KeyListener. Print the pressed character.
+//	4. Display "ENTER pressed" whenever the user presses the Enter key in a text field.
+//	5. Create a simple character counter that updates as the user types in a text field.
+//	6. Registration Form: Create fields for name, email and gender with a Submit button. On submission, display the entered information.
+//	7. Simple Calculator: Create a GUI calculator using buttons and ActionListener.
+//	8. Student Marks: Accept marks for three subjects. When Calculate is clicked, display total, percentage and grade.
+//  9. Temperature Converter: Enter Celsius and click a button to convert it to Fahrenheit.//	10. Counter Application: Provide Increase, Decrease and Reset buttons and update a displayed counter.
+//	11. Color Selector: Use a JComboBox containing Red, Green and Blue. Change the panel's background based on the selected value.
+//	12. Mouse Tracker: Continuously display the current (x, y) coordinates while the mouse moves over a panel.
+
 
 
 
