@@ -17,5 +17,6 @@ urlpatterns = [
 
     path('home/<str:name>/<str:city>/', home),
     path('menu/', views.menu_view, name='menu'),
+    path('result/', views.result, name='result'),
 ]
 

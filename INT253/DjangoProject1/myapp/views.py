@@ -124,3 +124,37 @@ def home(request, name,city):
 def menu_view(request):
     menu = ["Pizza", "Burger", "Pasta", "Salad", "Sushi"]
     return render(request, 'menu.html', {'menu': menu})
+
+
+# write all Usefull built-in variables in Django templates:
+    # {{ variable }}: Used to display the value of a variable.
+    # forloop.counter: Used to display the current iteration count in a for loop.
+    # forloop.first: Used to check if the current iteration is the first one in a for loop.
+    # forloop.last: Used to check if the current iteration is the last one in a for loop.
+    # forloop.parentloop: Used to access the parent loop in nested loops.
+    # forloop.revcounter: Used to display the reverse iteration count in a for loop.
+    # 
+    #
+    #
+    
+
+def result(request):
+    context = {
+        'name' : 'Shivang',
+        'marks': 85,
+    }
+    return render(request, 'result.html', context)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

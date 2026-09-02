@@ -1,0 +1,19 @@
+
+<h1>Result</h1>
+<p><strong>Welcome, {{ name |upper }}!</strong></p>
+<p><strong>Your marks are: {{ marks }}</strong></p>
+<p><strong>Your status is: {{ status }}</strong>
+
+{% if marks >= 90 %}
+    <p><strong><span style="color: green;">Excellent work!</span></strong></p>
+{% elif marks >= 80 %}
+    <p><strong><span style="color: blue;">Very good!</span></strong></p>
+{% elif marks >= 70 %}
+    <p><strong><span style="color: orange;">Good job!</span></strong></p>
+{% elif marks >= 60 %}
+    <p><strong><span style="color: red;">You passed!</span></strong></p>
+{% else %}
+    <p><strong><span style="color: red;">Unfortunately, you failed.</span></strong></p>
+{% endif %}
+
+</p>

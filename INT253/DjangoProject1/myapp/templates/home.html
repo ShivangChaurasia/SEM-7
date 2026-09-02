@@ -3,3 +3,14 @@
 <p>Welcome, {{ name |lower }}!</p>
 <p>Welcome, {{ name |length }}!</p>
 <p>You are From,{{city|default:"Bihar"}}
+
+
+{% for class_name, students in classes.items %}
+    <h2>{{ class_name }}</h2>
+    <ul>
+        {% for student in students %}
+            Class {{ forloop.parentloop.counter }}
+            Student {{ forloop.counter }}: {{ student }}
+        {% endfor %}
+    </ul>
+{% endfor %}
