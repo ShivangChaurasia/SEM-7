@@ -110,15 +110,17 @@ from django.shortcuts import render
 
 # Create your views here.
 
-context = {
-    "name" : "Shivang",
-    "city" : "Bihar",
-    "Age" : 21
-}
+# context = {
+#     "name" : "Shivang",
+#     "city" : "Bihar",
+#     "Age" : 21
+# }
 
 
 def home(request, name,city):
     return render(request, 'home.html', {'name': name, 'city': city or "Bihar"})
 
 
-
+def menu_view(request):
+    menu = ["Pizza", "Burger", "Pasta", "Salad", "Sushi"]
+    return render(request, 'menu.html', {'menu': menu})

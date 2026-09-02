@@ -70,6 +70,11 @@ class Questions1{
         System.out.println("1. Convert all names in a list to uppercase using map()");
         System.out.println("Soluton: ");
         
+        
+        
+        
+        
+        
 
 
 

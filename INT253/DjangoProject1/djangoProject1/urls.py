@@ -1,6 +1,7 @@
 
 from django.urls import path
 from myapp.views import home
+from myapp import views
 
 
 urlpatterns = [
@@ -15,5 +16,6 @@ urlpatterns = [
     # path('Dgreetings/<str:name>/<int:time>/', views.Dgreetings),
 
     path('home/<str:name>/<str:city>/', home),
+    path('menu/', views.menu_view, name='menu'),
 ]
 
