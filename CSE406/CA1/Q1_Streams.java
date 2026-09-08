@@ -67,13 +67,8 @@ public class Q1_Streams {
 
 
 
-// Explain why partitioningBy()is inappropriate for Report B?
+// 4. Explain why partitioningBy()is inappropriate for Report B?
 // Ans: because it is designed to split a collection into two groups based on a boolean predicate.
 // In the case of Report B, we want to group students by their department, which can have multiple categories (e.g., CSE, IT, ECE, ME). ns (true and false). Instead, `groupingBy()` is the correct choice for this scenario, as it allows us to group elements based on a key (in this case, the department) and can handle multiple categories effectively.
 
-
-// Modify Report B so each department contains only students names?
-// Ans: To modify Report B so that each department contains only the names of the students, we can use the `Collectors.mapping()`
-//  collector in conjunction with `Collectors.groupingBy()`.
-// This allows us to transform the list of students into a list of their names while still grouping them by department.
 
