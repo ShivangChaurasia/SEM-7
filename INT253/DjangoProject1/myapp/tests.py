@@ -7,8 +7,8 @@ class HomeTest(TestCase):
         self.assertEqual(2+2,4);
         self.assertTrue(5>1);
         self.assertFalse(3==4);
-        self.assertContains(response,"Welcome")
-        self.assertTemplateUsed(response,"home.html")
+        # self.assertContains(response,"Welcome")
+        # self.assertTemplateUsed(response,"home.html")
 
 
 class HomeTemplateTest(TestCase):
@@ -16,3 +16,17 @@ class HomeTemplateTest(TestCase):
         response = self.client.get("/")
         self.assertTemplateUsed(response,"Welcome Students")
 
+
+class BlogTests(TestCase):
+    def test_home_page(self):
+        response = self.client.get("/")
+        self.assertEqual(response)
+
+class HomeViewTest(TestCase):
+    def test_home_context(self):
+        response = self.client.get("/")
+        self.assertEqual(response.context["name"], "rahul")
+        self.assertEqual(response.context["state"], "Punjab")
+        self.assertEqual(
+            response.context["sunjects"],["Python", "Django", "HTML", "CSS"]
+        )

@@ -15,8 +15,10 @@ urlpatterns = [
     # path('items/', views.items),
     # path('Dgreetings/<str:name>/<int:time>/', views.Dgreetings),
 
-    path('home/<str:name>/<str:city>/', home),
-    path('menu/', views.menu_view, name='menu'),
-    path('result/', views.result, name='result'),
+    # path('home/<str:name>/<str:city>/', home),
+    # path('menu/', views.menu_view, name='menu'),
+    # path('result/', views.result, name='result'),
+
+    path('home/',views.home),
 ]
 

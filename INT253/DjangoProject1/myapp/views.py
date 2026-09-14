@@ -117,13 +117,13 @@ from django.shortcuts import render
 # }
 
 
-def home(request, name,city):
-    return render(request, 'home.html', {'name': name, 'city': city or "Bihar"})
+# def home(request, name,city):
+#     return render(request, 'home.html', {'name': name, 'city': city or "Bihar"})
 
 
-def menu_view(request):
-    menu = ["Pizza", "Burger", "Pasta", "Salad", "Sushi"]
-    return render(request, 'menu.html', {'menu': menu})
+# def menu_view(request):
+#     menu = ["Pizza", "Burger", "Pasta", "Salad", "Sushi"]
+#     return render(request, 'menu.html', {'menu': menu})
 
 
 # write all Usefull built-in variables in Django templates:
@@ -138,13 +138,24 @@ def menu_view(request):
     #
     
 
-def result(request):
-    context = {
-        'name' : 'Shivang',
-        'marks': 85,
-    }
-    return render(request, 'result.html', context)
+# def result(request):
+#     context = {
+#         'name' : 'Shivang',
+#         'marks': 85,
+#     }
+#     return render(request, 'result.html', context)
 
+
+
+def home(request):
+    context1={
+        "name" : "rahul",
+        "state" : "Punjab",
+        "subjects"  : ["Python", "Django", "HTML", "CSS"]
+    }
+    return render(request,"home.html",context1)
+
+# def about(request):
 
 
 
