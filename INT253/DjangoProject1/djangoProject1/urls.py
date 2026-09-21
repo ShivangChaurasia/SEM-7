@@ -1,6 +1,5 @@
 
 from django.urls import path
-from myapp.views import home
 from myapp import views
 
 
@@ -20,5 +19,6 @@ urlpatterns = [
     # path('result/', views.result, name='result'),
 
     path('home/',views.home),
+    path('form/', views.simple_form),
 ]
 

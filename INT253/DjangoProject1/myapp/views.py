@@ -105,8 +105,9 @@
 
 
 from email.policy import default
-
+from django.http import HttpResponse
 from django.shortcuts import render
+from django.middleware.csrf import get_token
 
 # Create your views here.
 
@@ -158,6 +159,24 @@ def home(request):
 # def about(request):
 
 
+def simple_form(request):
+    csrf_token = get_token(request)
+    return HttpResponse(
+        f"""
+        <form method="POST">
+            <input type="hidden" name="csrfmiddlewaretoken" value="{csrf_token}"
+            <label>Name: </label>
+            <input  type="text" name="name">
+            <br>
+            <br>
+            <label>Email:</label>
+            <input  type="text" name="email">
+            <br>
+            <br>
+            <input  type="Submit" value="Submit">
+        </form>
+        """
+    )
 
 
 
