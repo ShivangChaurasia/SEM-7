@@ -310,4 +310,11 @@ def simple_form(request):
 
 
 
+# Question: Hostel Request System:
+# A hostel office wants students to view room types and submit accomodation requests.
+# (a) Build a Django Project/App with views and URL routes for room type listings and details. Use a URL parameter to display a selected room
+# type and handle unknown IDs
+
+
+
 
